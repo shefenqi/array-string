@@ -1,0 +1,29 @@
+{
+  "name": "array-string",
+  "version": "0.0.1",
+  "description": "数组字符串",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shefenqi/array-string.git"
+  },
+  "keywords": [
+    "array",
+    "string",
+    "array-string",
+    "string-array"
+  ],
+  "author": "nino",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/shefenqi/array-string/issues"
+  },
+  "homepage": "https://github.com/shefenqi/array-string#readme",
+  "dependencies": {
+    "array-uniq": "^1.0.2",
+    "underscore": "^1.8.3"
+  }
+}
