@@ -83,7 +83,7 @@ ArrayString.prototype.pop = function (handler) {
  * 如果元素不存在，则放入该元素
  * @return {[type]} [description]
  */
-ArrayString.prototype.pushIfNotExist = function (value) {
+ArrayString.prototype.uniqPush = function (value) {
   if (!_.contains(this.data, value)) {
     this.data.push(value);
   }
@@ -98,6 +98,17 @@ ArrayString.prototype.push = function (value) {
   this.data.push(value);
   return this;
 };
+
+/**
+ * 替换某个值
+ * @return {[type]} [description]
+ */
+ArrayString.prototype.replaceWith = function (toBeReplace, replacement) {
+  this.data = _.without(this.data, toBeReplace);
+  this.data.push(replacement);
+  return this;
+};
+
 
 /**
  * 取出第一个元素

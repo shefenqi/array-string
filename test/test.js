@@ -31,11 +31,11 @@ describe('ArrayString', function () {
   it('unshift()', function () {
     assert.strictEqual(as.unshift('-1').toString(), '-1,0,1,2,3');
   });
-  it('pushIfNotExist()', function () {
-    assert.strictEqual(as.pushIfNotExist('4').toString(), '0,1,2,3,4');
+  it('uniqPush()', function () {
+    assert.strictEqual(as.uniqPush('4').toString(), '0,1,2,3,4');
   });
-  it('pushIfNotExist()', function () {
-    assert.strictEqual(as.pushIfNotExist('3').toString(), '0,1,2,3');
+  it('uniqPush()', function () {
+    assert.strictEqual(as.uniqPush('3').toString(), '0,1,2,3');
   });
   it('contains()', function () {
     as.contains('2', (result) => {
