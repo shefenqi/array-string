@@ -39,7 +39,7 @@ function ArrayString(obj, options) {
     options = {};
   }
   this.splitter = options.splitter || SPLITTER;
-  this.keepChained = options.keepChained || true;
+  this.keepChained = options.keepChained || false;
   this.data = toArray(obj, this.splitter);
 }
 

@@ -20,13 +20,15 @@ describe('ArrayString', function () {
     assert.strictEqual(as.toString(), string);
   });
   it('pop()', function () {
-    assert.strictEqual(as.pop().toString(), '0,1,2');
+    as.pop();
+    assert.strictEqual(as.toString(), '0,1,2');
   });
   it('push()', function () {
     assert.strictEqual(as.push('4').toString(), '0,1,2,3,4');
   });
   it('shift()', function () {
-    assert.strictEqual(as.shift().toString(), '1,2,3');
+    as.shift();
+    assert.strictEqual(as.toString(), '1,2,3');
   });
   it('unshift()', function () {
     assert.strictEqual(as.unshift('-1').toString(), '-1,0,1,2,3');
