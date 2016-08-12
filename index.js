@@ -384,4 +384,16 @@ ArrayString.prototype.size = function (handler) {
   }
 };
 
+/**
+ * 元素逆序
+ */
+ArrayString.prototype.reverse = function () {
+  this.data = this.data.reverse();
+  if (this.keepChained) {
+    return this;
+  } else {
+    return this.data;
+  }
+};
+
 module.exports = ArrayString;

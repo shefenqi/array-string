@@ -62,5 +62,8 @@ describe('ArrayString', function () {
       assert.strictEqual(result, 4);
     });
   });
+  it('reverse()', function () {
+    assert.strictEqual(as.reverse().toString(), '3,2,1,0');
+  });
 
 });
